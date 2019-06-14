@@ -1,0 +1,30 @@
+<%- include("partials/header") -%>
+
+<div class="box" id="heading">
+
+  <% for (let i = 0; i < 3; i++) { %>
+  <h1> <%= day %></h1>
+  <% } %>
+
+</div>
+
+
+<div class="box">
+
+  <% newListItems.forEach(function(item){ %>
+  <div class="item">
+    <input type="checkbox" name="" value="">
+    <p>
+      <%= item %>
+    </p>
+  </div>
+  <% }); %>
+
+  <form class="" action="/" method="post">
+    <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+    <button type="submit" name="button">+</button>
+  </form>
+</div>
+
+
+<%- include("partials/footer") -%>
